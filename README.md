@@ -13,6 +13,6 @@ This project is part of a technical assesment for a backend developer position.
 
 ### Twitter's ERD
 
-##### The below diagram illustrates the system actors and their interaction with system functions.
+##### The below diagram illustrates the database tables and their relations with one another.
 
 ![Image of twitter database ERD](flaskr/diagrams/Twitter_ERD.drawio.png)
