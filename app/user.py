@@ -14,3 +14,9 @@ def home():
     tweets = tweet_model.get_tweets()
     return jsonify(tweets)
 
+@user_blueprint.route('/',methods = ["POST"])
+def post_tweet():
+    content = request.form.get("content")
+    if(tweet_controller.is_tweet_valid(content)):
+        tweet_model.add_tweet("", content,datetime.datetime.now)
+
