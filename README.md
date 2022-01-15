@@ -2,7 +2,15 @@
 
 This project is part of a technical assesment for a backend developer position. 
 
+## Dependencies
+- Python >= 3.9.
+- Postgres12 .
+- Run "pip install -r requirements.txt"
 
+## Code guidelines 
+- The code in this project follows PEP8 standard. 
+
+## Diagrams
 ### Actor diagram
 
 ##### The below diagram illustrates the system actors and their interaction with system functions.
