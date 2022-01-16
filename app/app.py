@@ -1,11 +1,5 @@
-from app import app
 from flask import Flask
+from user_blueprint import user_blueprint 
+
 app = Flask(__name__)
-
-
-@app.route('/')
-def home():
-    tweet_model = TweetModel()
-    return tweet_model.get_tweets()
-
-
+app.register_blueprint(user_blueprint)
