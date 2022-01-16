@@ -35,7 +35,9 @@ class TweetModel:
     def get_tweet_comments(self, tweet_id):
         comment_model = CommentModel()
         return comment_model.get_tweet_comments(tweet_id)
-        
+    def is_exsits_tweet(self, tweet_id):
+        cursor.execute("Select id from tweet where id = %s", (tweet_id))
+        return cursor.fetchone()
 
 class CommentModel:
     """
