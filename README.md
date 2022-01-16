@@ -9,6 +9,9 @@ This project is part of a technical assesment for a backend developer position.
 
 ## Code guidelines 
 - The code in this project follows PEP8 standard. 
+- The commenting guidelines of the project adapts "Coding without comments" [philsophy](https://blog.codinghorror.com/coding-without-comments/), but since python is 
+  a dynamic language, functions were commented to show paramters type for the purpose of clarifying any 
+  ambiguity about paramters data type for fellow developers. 
 
 ## Diagrams
 ### Actor diagram
