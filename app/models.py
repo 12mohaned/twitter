@@ -80,7 +80,7 @@ class CommentModel:
     Model responsible for crud operations of table "comment".
     """
 
-    def add_comment(self, tweet_id, content, parent_commend_id):
+    def add_comment(self, tweet_id, content, parent_commend_id, username):
         """
         param data: tweet_id
         type  data: int
@@ -88,9 +88,11 @@ class CommentModel:
         type  data: string
         param data: parent_commend_id
         type  data: int
+        param data: username
+        type  data: string
         """
-        query = "INSERT INTO comment (tweet_id, content, parent_commend_id) VALUES (%s, %s, %s)"
-        cursor.execute(query, (tweet_id, content, parent_commend_id))
+        query = "INSERT INTO comment (tweet_id, content, parent_commend_id, username) VALUES (%s, %s, %s, %s)"
+        cursor.execute(query, (tweet_id, content, parent_commend_id, username))
         connection.commit()
         return cursor.statusmessage
 
