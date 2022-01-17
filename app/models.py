@@ -72,7 +72,7 @@ class TweetModel:
         type  data: int
         """
         query = "SELECT id from tweet where id = %s"
-        cursor.execute(query, (tweet_id))
+        cursor.execute(query, [tweet_id])
         return cursor.fetchone()
 
 class CommentModel:
