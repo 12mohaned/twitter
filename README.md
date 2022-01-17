@@ -33,7 +33,7 @@ This project is part of a technical assesment for a backend developer position.
 
 ##### The below diagram illustrates the database tables and their relations with one another.
 
-![Image of twitter database ERD](app/diagrams/Twitter_ERD.drawiopng.png)
+![Image of twitter database ERD](app/diagrams/Twitter_ERD.drawio.png)
 
 
 
