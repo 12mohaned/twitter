@@ -35,6 +35,7 @@ def get_sub_comments(tweet_id, comment_id):
 
 @user_blueprint.route('/home', methods=["POST"])
 def post_tweet():
+    #Content is fetched from tweet form(UI)
     content = request.form.get('tweet')
     if(tweet_controller.is_tweet_valid(content)):
         tweet_model.add_tweet("Guest1",content,datetime.datetime.now())
@@ -43,12 +44,14 @@ def post_tweet():
 
 @user_blueprint.route('/home/<tweet_id>', methods=["POST"])
 def post_comment(tweet_id):
+    #Content is fetched from comment form(UI)
     content = request.form.get("comment")
     if not comment_controller.is_comment_empty(content):
         comment_model.add_comment(tweet_id, content, None)
 
 @user_blueprint.route('/home/<tweet_id>/<parent_comment_id>', methods=["POST"])
 def post_sub_comment(tweet_id, parent_comment_id):
+    #Content is fetched from comment form(UI)
     content = request.form.get("comment")
     if not comment_controller.is_comment_empty(content):
         comment_model.add_comment(tweet_id, content, parent_comment_id)
