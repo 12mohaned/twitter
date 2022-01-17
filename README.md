@@ -2,6 +2,13 @@
 
 This project is part of a technical assesment for a backend developer position. 
 
+## Setting up developement environment
+ To run this project, you have to follow the below steps:
+ - First, clone the project using git clone "https://github.com/12mohaned/twitter".
+ - Navigate to the project using cmd.
+ - Install the required packages and libraries mentioned in the **Dependencies** section. 
+ - After installing the dependencies, navigate using cmd to app folder then run **Flask run** to start the server
+ 
 ## Dependencies
 - Python >= 3.9.
 - Postgres12 .
