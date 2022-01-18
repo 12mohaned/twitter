@@ -23,6 +23,7 @@ This project is part of a technical assesment for a backend developer position.
 
 ## Testing 
 - To test the file, you need to run "pytest", after navigating using cmd to app.
+- In order for test cases to pass, the data.sql file should be run. 
 ## Diagrams
 ### Actor diagram
 
