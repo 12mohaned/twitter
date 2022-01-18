@@ -28,12 +28,17 @@ def get_tweet_subcomments(comment_id):
     response = Client.get('/home/1'+str(comment_id))
     return response.status_code
 
-def test_answer():
+def test_tweet_comments():
     #Test case with valid tweet id
     assert get_tweet_comments(1) == 200
     #Test case with in-valid tweet id
-    assert get_tweet_comments(2) == 400
+    assert get_tweet_comments(19898329) == 400
+
+def test_tweet_sub_comments():
     #Test case with in-valid comment id
     assert get_tweet_subcomments(2) == 400
     #Test case with valid comment id
     assert get_tweet_subcomments("") == 200
+
+def test_get_tweets():
+    assert get_tweets() == 200
